@@ -56,31 +56,5 @@ public class EmployeeServiceImpl implements EmployeeService {
 		
 	}
 
-	@Override
-	public List<Employee> getEmployeeByName(String name) {
-		
-		return eRepo.findByName(name);
-	}
-
-	@Override
-	public List<Employee> getEmployeeByNameAndLocation(String name, String location) {
-		return eRepo.findByNameAndLocation(name, location);
-	}
-
-	@Override
-	public List<Employee> getEmployeeByKeyword(String name) {
-		Sort sort=Sort.by(Sort.Direction.DESC, "id");
-		return eRepo.findByNameContaining(name,sort);
-	}
-
-	@Override
-	public List<Employee> getEMployeeByNameOrLocation(String name, String location) {
-		return eRepo.getEmployeeByNameAndLocation(name, location);
-	}
-
-	@Override
-	public Integer deleteByEmployeeByName(String name) {
-		return eRepo.deleteEmployeebyName(name);
-	}
-
+	
 }
