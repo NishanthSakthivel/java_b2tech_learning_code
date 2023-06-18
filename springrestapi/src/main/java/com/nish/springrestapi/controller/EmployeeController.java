@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nish.springrestapi.model.Employee;
+import com.nish.springrestapi.Entity.Employee;
 import com.nish.springrestapi.service.EmployeeService;
 
 import jakarta.validation.Valid;

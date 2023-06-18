@@ -10,7 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
-import com.nish.springrestapi.model.Employee;
+import com.nish.springrestapi.Entity.Employee;
 import com.nish.springrestapi.repository.EmployeeRepo;
 
 @Service

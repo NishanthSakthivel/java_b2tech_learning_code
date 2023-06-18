@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.domain.Sort;
 
-import com.nish.springrestapi.model.Employee;
+import com.nish.springrestapi.Entity.Employee;
 
 public interface EmployeeService {
 	

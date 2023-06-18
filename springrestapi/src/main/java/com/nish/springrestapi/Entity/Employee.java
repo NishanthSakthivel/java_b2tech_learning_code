@@ -1,9 +1,10 @@
-package com.nish.springrestapi.model;
+package com.nish.springrestapi.Entity;
 
 
 
 
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,7 +29,7 @@ public class Employee {
 	private String name;
 	
 	@JoinColumn(name= "dept_id")
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	private Department department;
 	
 	
